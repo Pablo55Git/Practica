@@ -1,0 +1,312 @@
+body {
+    margin: 0;
+    font-family: 'Orbitron', 'Zen Tokyo Zoo', Arial, sans-serif;
+    background: #0a0a0a;
+    color: #ffd700;
+    position: relative;
+    overflow-x: hidden;
+    text-align: center;
+}
+
+img {
+    width: 30vw; height: 30vh;
+    }
+
+.texto { 
+    margin-left: 150px;
+    margin-right: 150px;
+    }
+
+canvas#particles-bg {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw; height: 100vh;
+    z-index: 0;
+    pointer-events: none;
+}
+.hero-section {
+    background: linear-gradient(120deg, #d90429 60%, #ffd700 100%);
+    padding: 3rem 1rem 2rem 1rem;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+}
+.hero-img {
+    width: 320px;
+    border-radius: 30px;
+    box-shadow: 0 0 40px 10px #ffd70088, 0 0 80px 10px #d90429aa;
+    margin-bottom: 1.5rem;
+    border: 4px solid #ffd700;
+}
+.hero-title {
+    font-family: 'Zen Tokyo Zoo', 'Orbitron', Arial, sans-serif;
+    font-size: 2.7rem;
+    color: #fff;
+    text-shadow: 0 0 10px #d90429, 0 0 20px #ffd700;
+    margin-bottom: 1.2rem;
+    letter-spacing: 2px;
+}
+.hero-title .oriental {
+    color: #ffd700;
+    font-family: 'Orbitron', Arial, sans-serif;
+    text-shadow: 0 0 10px #ffd700, 0 0 20px #d90429;
+}
+.cta-btn {
+    font-family: 'Orbitron', Arial, sans-serif;
+    background: #d90429;
+    color: #ffd700;
+    border: none;
+    padding: 1rem 2.5rem;
+    font-size: 1.3rem;
+    border-radius: 40px;
+    cursor: pointer;
+    box-shadow: 0 0 20px #ffd70088, 0 0 10px #d90429aa;
+    transition: background 0.2s, box-shadow 0.2s;
+    margin-top: 1rem;
+    font-weight: bold;
+    position: relative;
+    z-index: 2;
+}
+.cta-btn.neon:hover {
+    background: #ffd700;
+    color: #000000;
+    box-shadow: 0 0 40px #ffd700, 0 0 20px #3204d9;
+}
+.section-title {
+    font-family: 'Orbitron', Arial, sans-serif;
+    font-size: 2rem;
+    color: #030101;
+    text-align: center;
+    margin: 2rem 0 1rem 0;
+    letter-spacing: 1px;
+    text-shadow: 0 0 10px #ffd70088;
+}
+.benefits-section {
+    background: #111;
+    padding: 2rem 1rem;
+    z-index: 1;
+    position: relative;
+}
+.benefits-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+.benefit-card {
+    background: #222;
+    border: 2px solid #d90429;
+    border-radius: 20px;
+    padding: 1.5rem 1rem;
+    width: 220px;
+    color: #ffd700;
+    box-shadow: 0 0 20px #d9042944, 0 0 10px #ffd70022;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.benefit-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px #ffd700, 0 0 20px #d90429;
+}
+.benefit-card img {
+    width: 48px;
+    margin-bottom: 0.7rem;
+    filter: drop-shadow(0 0 8px #ffd700);
+}
+.benefit-card h3 {
+    font-size: 1.1rem;
+    color: #d90429;
+    margin-bottom: 0.5rem;
+    font-family: 'Orbitron', Arial, sans-serif;
+}
+.reviews-section {
+    background: #1a1a1a;
+    padding: 2rem 1rem;
+    z-index: 1;
+    position: relative;
+}
+.reviews-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+.review-card {
+    background: #222;
+    border: 2px solid #ffd700;
+    border-radius: 20px;
+    padding: 1.2rem 1rem;
+    width: 220px;
+    color: #fff;
+    box-shadow: 0 0 20px #ffd70044, 0 0 10px #d9042922;
+    text-align: center;
+    font-family: 'Orbitron', Arial, sans-serif;
+}
+.stars {
+    color: #ffd700;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+.reviewer {
+    font-size: 0.9rem;
+    color: #ffd700;
+    margin-top: 0.5rem;
+    display: block;
+}
+.offer-section {
+    background: linear-gradient(90deg, #d90429 60%, #ffd700 100%);
+    padding: 2rem 1rem;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+.offer-content {
+    max-width: 400px;
+    margin: 0 auto;
+}
+.timer {
+    font-size: 2rem;
+    color: #ffd700;
+    font-family: 'Orbitron', Arial, sans-serif;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 0 10px #ffd700, 0 0 20px #d90429;
+}
+.offer-text {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+.compare-section {
+    background: #111;
+    padding: 2rem 1rem;
+    z-index: 1;
+    position: relative;
+}
+.compare-table {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background: #222;
+    color: #ffd700;
+    font-family: 'Orbitron', Arial, sans-serif;
+    box-shadow: 0 0 20px #ffd70044;
+}
+.compare-table th, .compare-table td {
+    border: 1px solid #d90429;
+    padding: 0.7rem;
+    text-align: center;
+}
+.compare-table th {
+    background: #d90429;
+    color: #fff;
+}
+.guarantee-section {
+    background: #1a1a1a;
+    padding: 2rem 1rem;
+    text-align: center;
+    z-index: 1;
+    position: relative;
+}
+.guarantee-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    color: #ffd700;
+    font-size: 1.2rem;
+    font-family: 'Orbitron', Arial, sans-serif;
+}
+.guarantee-icon {
+    width: 48px;
+    filter: drop-shadow(0 0 8px #ffd700);
+}
+footer {
+    background: #111;
+    color: #ffd700;
+    text-align: center;
+    padding: 2rem 1rem 1rem 1rem;
+    margin-top: 2rem;
+    position: relative;
+    z-index: 1;
+}
+.footer-social {
+    margin-bottom: 1rem;
+}
+.social-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 0 0.5rem;
+    background-size: cover;
+    transition: filter 0.2s;
+    filter: drop-shadow(0 0 8px #ffd700);
+}
+.social-icon.whatsapp { background-image: url('https://cdn-icons-png.flaticon.com/512/733/733585.png'); }
+.social-icon.instagram { background-image: url('https://cdn-icons-png.flaticon.com/512/2111/2111463.png'); }
+.social-icon.tiktok { background-image: url('https://cdn-icons-png.flaticon.com/512/3046/3046122.png'); }
+.social-icon:hover { filter: drop-shadow(0 0 16px #d90429); }
+.footer-form {
+    margin: 1rem auto;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+.footer-form label {
+    color: #ffd700;
+    font-family: 'Orbitron', Arial, sans-serif;
+    font-size: 1rem;
+}
+.footer-form input {
+    padding: 0.7rem;
+    border-radius: 10px;
+    border: 2px solid #d90429;
+    font-size: 1rem;
+    background: #222;
+    color: #ffd700;
+}
+.footer-form input:focus {
+    outline: none;
+    border-color: #ffd700;
+    box-shadow: 0 0 10px #ffd70088;
+}
+.footer-copy {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #fff;
+}
+@media (max-width: 900px) {
+    .benefits-cards, .reviews-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .benefit-card, .review-card {
+        width: 90%;
+        margin-bottom: 1rem;
+    }
+    .hero-img {
+        width: 90vw;
+        max-width: 320px;
+    }
+}
+@media (max-width: 600px) {
+    .hero-title {
+        font-size: 1.5rem;
+    }
+    .section-title {
+        font-size: 1.2rem;
+    }
+    .compare-table th, .compare-table td {
+        font-size: 0.9rem;
+        padding: 0.4rem;
+    }
+    .timer {
+        font-size: 1.2rem;
+    }
+}
